@@ -8,6 +8,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-
+        <StackPanel>
+            <TextBlock x:Name="GreetingTextBlock" FontSize="48" Text="Hello World!" />
+            <TextBox x:Name="PersonNameTextBox" FontSize="48" />
+            <Button FontSize="48" Content="Say Hello" Click="Button_Click_1" />
+        </StackPanel>
     </Grid>
 </Page>
