@@ -34,10 +34,5 @@ namespace TechEdDemo.Views
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
         }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            GreetingTextBlock.Text = "Hello " + PersonNameTextBox.Text;
-        }
     }
 }

@@ -9,6 +9,7 @@ namespace TechEdDemo.ViewModels
     public class MainViewModel
     {
         public string Greeting { get; set; }
+        public int Total { get; set; }
 
         public MainViewModel()
         {

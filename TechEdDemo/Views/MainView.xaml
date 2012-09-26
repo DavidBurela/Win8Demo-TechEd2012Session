@@ -13,7 +13,8 @@
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
-            <TextBlock x:Name="GreetingTextBlock" FontSize="48" Text="{Binding Greeting}" />
+            <TextBlock x:Name="GreetingTextBlock" FontSize="48" Text="{Binding Path=Greeting}" />
+            <TextBlock x:Name="TotalTextBlock" FontSize="48" Text="{Binding Path=Total}" />
         </StackPanel>
     </Grid>
 </Page>
