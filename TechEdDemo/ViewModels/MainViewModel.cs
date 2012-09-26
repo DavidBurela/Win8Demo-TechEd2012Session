@@ -8,6 +8,11 @@ namespace TechEdDemo.ViewModels
 {
     public class MainViewModel
     {
-        
+        public string Greeting { get; set; }
+
+        public MainViewModel()
+        {
+            Greeting = "Hello World! v2";
+        }
     }
 }
