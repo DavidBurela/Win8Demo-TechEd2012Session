@@ -10,6 +10,9 @@ namespace TechEdDemo.ViewModels
 {
     public class MainViewModel : INotifyPropertyChanged
     {
+        public ICommand IncrementCommand { get; set; }
+        public ICommand DoubleCommand { get; set; }
+
         private string _greeting;
         public string Greeting
         {
@@ -34,7 +37,12 @@ namespace TechEdDemo.ViewModels
 
         public MainViewModel()
         {
+            // Properties
             Greeting = "Hello World! v2";
+
+            // Commands
+            IncrementCommand = new DelegateCommand(obj => Increment());
+            DoubleCommand = new DelegateCommand(obj => Double());
         }
 
         public void Increment()
