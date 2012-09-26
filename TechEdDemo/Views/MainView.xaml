@@ -13,8 +13,8 @@
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
-            <TextBlock x:Name="GreetingTextBlock" FontSize="48" Text="{Binding Path=Greeting}" />
-            <TextBlock x:Name="TotalTextBlock" FontSize="48" Text="{Binding Path=Total}" />
+            <TextBlock FontSize="48" Text="{Binding Path=Greeting}" />
+            <TextBlock FontSize="48" Text="{Binding Path=Total}" />
             <Button FontSize="48" Content="Increment By 1" Command="{Binding Path=IncrementCommand}" />
             <Button FontSize="48" Content="Double" Command="{Binding DoubleCommand}" />
         </StackPanel>
