@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace TechEdDemo.ViewModels
 {
@@ -53,4 +54,27 @@ namespace TechEdDemo.ViewModels
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
     }
+
+    public class DelegateCommand : ICommand
+    {
+        public Action<object> ExecuteAction { get; set; }
+
+        public DelegateCommand(Action<object> executeAction)
+        {
+            ExecuteAction = executeAction;
+        }
+
+        public bool CanExecute(object parameter)
+        {
+            return true;
+        }
+
+        public event EventHandler CanExecuteChanged;
+
+        public void Execute(object parameter)
+        {
+            ExecuteAction(parameter);
+        }
+    }
+
 }
