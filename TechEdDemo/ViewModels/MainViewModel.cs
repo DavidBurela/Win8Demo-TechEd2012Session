@@ -15,5 +15,15 @@ namespace TechEdDemo.ViewModels
         {
             Greeting = "Hello World! v2";
         }
+
+        public void Increment()
+        {
+            Total += 1;
+        }
+
+        public void Double()
+        {
+            Total *= 2;
+        }
     }
 }

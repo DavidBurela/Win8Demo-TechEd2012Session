@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using TechEdDemo.ViewModels;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -21,9 +22,14 @@ namespace TechEdDemo.Views
     /// </summary>
     public sealed partial class MainView : Page
     {
+        public MainViewModel ViewModel { get; set; }
+
         public MainView()
         {
             this.InitializeComponent();
+
+            // Get a handle to the ViewModel that was initialised in the <View.DataContext>
+            ViewModel = this.DataContext as MainViewModel;
         }
 
         /// <summary>
@@ -33,6 +39,18 @@ namespace TechEdDemo.Views
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+        }
+
+        // Increment
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ViewModel.Increment();
+        }
+
+        // Double
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            ViewModel.Double();
         }
     }
 }
