@@ -13,6 +13,8 @@
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
+            <ListView ItemsSource="{Binding Icecreams}" Height="400" />
+            
             <TextBlock FontSize="48" Text="{Binding Path=Greeting}" />
             <TextBlock FontSize="48" Text="{Binding Path=Total}" />
             <Button FontSize="48" Content="Increment By 1" Command="{Binding Path=IncrementCommand}" />
