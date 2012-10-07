@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechEdDemo", "TechEdDemo\TechEdDemo.csproj", "{E4F3DC4E-8ED8-49B1-AB77-713551F116A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortableClassLibrary1", "PortableClassLibrary1\PortableClassLibrary1.csproj", "{A385444E-3666-4247-801E-5E6198241282}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,16 @@ Global
 		{E4F3DC4E-8ED8-49B1-AB77-713551F116A3}.Release|x86.ActiveCfg = Release|x86
 		{E4F3DC4E-8ED8-49B1-AB77-713551F116A3}.Release|x86.Build.0 = Release|x86
 		{E4F3DC4E-8ED8-49B1-AB77-713551F116A3}.Release|x86.Deploy.0 = Release|x86
+		{A385444E-3666-4247-801E-5E6198241282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A385444E-3666-4247-801E-5E6198241282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A385444E-3666-4247-801E-5E6198241282}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{A385444E-3666-4247-801E-5E6198241282}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A385444E-3666-4247-801E-5E6198241282}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A385444E-3666-4247-801E-5E6198241282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A385444E-3666-4247-801E-5E6198241282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A385444E-3666-4247-801E-5E6198241282}.Release|ARM.ActiveCfg = Release|Any CPU
+		{A385444E-3666-4247-801E-5E6198241282}.Release|x64.ActiveCfg = Release|Any CPU
+		{A385444E-3666-4247-801E-5E6198241282}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
