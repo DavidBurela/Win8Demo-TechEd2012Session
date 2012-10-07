@@ -119,6 +119,18 @@
     <None Include="TechEdDemo_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Images\60Banana.png" />
+    <Content Include="Assets\Images\60Lemon.png" />
+    <Content Include="Assets\Images\60Mint.png" />
+    <Content Include="Assets\Images\60Orange.png" />
+    <Content Include="Assets\Images\60SauceCaramel.png" />
+    <Content Include="Assets\Images\60SauceChocolate.png" />
+    <Content Include="Assets\Images\60SauceStrawberry.png" />
+    <Content Include="Assets\Images\60SprinklesChocolate.png" />
+    <Content Include="Assets\Images\60SprinklesRainbow.png" />
+    <Content Include="Assets\Images\60SprinklesVanilla.png" />
+    <Content Include="Assets\Images\60Strawberry.png" />
+    <Content Include="Assets\Images\60Vanilla.png" />
     <Content Include="Assets\Logo.png" />
     <Content Include="Assets\SmallLogo.png" />
     <Content Include="Assets\SplashScreen.png" />

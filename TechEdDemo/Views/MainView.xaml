@@ -13,7 +13,19 @@
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
-            <ListView ItemsSource="{Binding Icecreams}" Height="400" />
+            <ListView ItemsSource="{Binding Icecreams}" Height="400" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding Image}" Height="60" />
+                            <StackPanel>
+                                <TextBlock Text="{Binding Name}" />
+                                <TextBlock Text="{Binding Category}" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
             
             <TextBlock FontSize="48" Text="{Binding Path=Greeting}" />
             <TextBlock FontSize="48" Text="{Binding Path=Total}" />
